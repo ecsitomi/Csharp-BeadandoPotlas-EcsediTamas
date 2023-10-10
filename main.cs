@@ -3,18 +3,22 @@ using System;
 class Program {
   public static void Main (string[] args) {
     Console.WriteLine ("Ecsedi Tamás C# beadandó pótlása");
+    
     //1. feladat
     Console.WriteLine ("Adjon meg egy egész számot: ");
     string szamBekeres = Console.ReadLine();
     int N = Convert.ToInt32(szamBekeres);
+    
     //2. feladat
     int[] Tomb = new int[N];
+    
     //3. feladat
     Random Szamok=new Random();
     for (int i=0;i<N;i++)
     {
       Tomb[N]=Szamok.Next(101);
     }
+    
     //4. feladat
     Console.WriteLine("Páros számok");
     foreach (var szam in Tomb)
@@ -58,6 +62,7 @@ class Program {
         Legnagyobb=szam;
     }
     Console.WriteLine(Legnagyobb);
+    
     //5. feladat
     Console.WriteLine("Adjon meg 5 db szót");
     string[] Szavak = new string[5];
@@ -94,6 +99,7 @@ class Program {
     }
     if (VanE==false)
       Console.WriteLine("Nincsenek egyforma szavak.");
+    
     //6. feladat
     Console.WriteLine("a/b + c/d");
     Console.WriteLine("a:");
@@ -116,6 +122,7 @@ class Program {
     double eredmeny = eredmenyFent/ujBD;
     Console.WriteLine($"Vagyis: {eredmeny}");
     //Nincs kisebb nevezőre hozva a tört
+    
     //7. feladat
     while (true)
     {
@@ -131,6 +138,7 @@ class Program {
         Console.WriteLine("Adj meg egy helyes páros számot!");
       } 
     }
+    
     //8. feladat
     while (true)
     {
@@ -143,15 +151,28 @@ class Program {
         Console.WriteLine($"A megadott szám öttel való osztási maradéka: {Eredmeny}");
         break;
       } else {
-        Console.WriteLine("Adj meg egy helyes pozitív egész számot.")
+        Console.WriteLine("Adj meg egy helyes pozitív egész számot.");
       }
     }
     
-    
-    
-    
+    //9. feladat
+    while (true)
+    {      
+      Console.WriteLine("Adj meg két egész számot.");
+      string bekertA = Console.ReadLine();
+      string bekertB = Console.ReadLine();
+      int kapottA = Convert.ToInt32(bekertA);
+      int kapottB = Convert.ToInt32(bekertB);
+      if (bekertA==bekertB)
+      {
+        Console.WriteLine("A számok azonosak.");
+        break;
+      } else {
+        Console.WriteLine("A számok nem azonosak");
+      }
+    }    
   }
-
+  
   //Prím szám kereső metódus
   //Loptam :(
   static bool IsPrime(int number) {

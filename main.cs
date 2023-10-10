@@ -131,6 +131,21 @@ class Program {
         Console.WriteLine("Adj meg egy helyes páros számot!");
       } 
     }
+    //8. feladat
+    while (true)
+    {
+      Console.WriteLine("Adj meg egy pozitiv egész számot.");
+      string SzamBekeres2 = Console.ReadLine();
+      int EgeszSzam = Convert.ToInt32(SzamBekeres2);
+      if (EgeszSzam>0)
+      {
+        double Eredmeny = EgeszSzam%5;
+        Console.WriteLine($"A megadott szám öttel való osztási maradéka: {Eredmeny}");
+        break;
+      } else {
+        Console.WriteLine("Adj meg egy helyes pozitív egész számot.")
+      }
+    }
     
     
     

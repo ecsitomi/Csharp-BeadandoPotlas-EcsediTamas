@@ -58,6 +58,42 @@ class Program {
         Legnagyobb=szam;
     }
     Console.WriteLine(Legnagyobb);
+    //5. feladat
+    Console.WriteLine("Adjon meg 5 db szót");
+    string[] Szavak = new string[5];
+    for (int i=0;i<5;i++)
+    {
+      Szavak[i]=Console.ReadLine();
+    }
+    Console.WriteLine("Legrövidebb szó");
+    string Legrovidebb = Szavak[0];
+    for (int i=0;i<5;i++)
+    {
+      if (Legrovidebb.Length>Szavak[i].Length)
+        Legrovidebb=Szavak[i];
+    }
+    Console.WriteLine(Legrovidebb);
+    Console.WriteLine("Leghosszabb szó");
+    string Leghosszabb = Szavak[0];
+    for (int i=0;i<5;i++)
+    {
+      if (Leghosszabb.Length<Szavak[0].Length)
+        Leghosszabb=Szavak[i];
+    }
+    Console.WriteLine(Leghosszabb);
+    Console.WriteLine("Egyforma szavak");
+    bool VanE = false;
+    for (int i=0;i<5;i++)
+    {
+      for (int j=i+1;j<5;j++)
+      {
+        if (Szavak[i]==Szavak[j])
+          Console.WriteLine(Szavak[i]);
+          VanE = true;
+      }
+    }
+    if (VanE==false)
+      Console.WriteLine("Nincsenek egyforma szavak.");
   }
 
   //Prím szám kereső metódus

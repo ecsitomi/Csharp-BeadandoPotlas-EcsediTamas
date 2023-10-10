@@ -116,6 +116,21 @@ class Program {
     double eredmeny = eredmenyFent/ujBD;
     Console.WriteLine($"Vagyis: {eredmeny}");
     //Nincs kisebb nevezőre hozva a tört
+    //7. feladat
+    while (true)
+    {
+      Console.WriteLine("Adj meg egy páros számot");
+      string SzamBekeres = Console.ReadLine();
+      int ParosSzam = Convert.ToInt32(SzamBekeres);
+      if (ParosSzam%2==0)
+      {
+        Console.WriteLine("A szám megfelelő.");
+        break;
+      } else 
+      {
+        Console.WriteLine("Adj meg egy helyes páros számot!");
+      } 
+    }
     
     
     

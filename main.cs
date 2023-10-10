@@ -94,6 +94,32 @@ class Program {
     }
     if (VanE==false)
       Console.WriteLine("Nincsenek egyforma szavak.");
+    //6. feladat
+    Console.WriteLine("a/b + c/d");
+    Console.WriteLine("a:");
+    string tortA = Console.ReadLine();
+    int A = Convert.ToInt32(tortA);
+    Console.WriteLine("b:");
+    string tortB = Console.ReadLine();
+    int B = Convert.ToInt32(tortB);
+    Console.WriteLine("c:");
+    string tortC = Console.ReadLine();
+    int C = Convert.ToInt32(tortC);
+    Console.WriteLine("D:");
+    string tortD = Console.ReadLine();
+    int D = Convert.ToInt32(tortD);
+    int ujA = A*D;
+    int ujBD = B*D;
+    int ujC = C*B;
+    int eredmenyFent = ujA+ujC;
+    Console.WriteLine($"A tört = {eredmenyFent}/{ujBD}");
+    double eredmeny = eredmenyFent/ujBD;
+    Console.WriteLine($"Vagyis: {eredmeny}");
+    //Nincs kisebb nevezőre hozva a tört
+    
+    
+    
+    
   }
 
   //Prím szám kereső metódus

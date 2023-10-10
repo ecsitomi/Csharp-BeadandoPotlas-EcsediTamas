@@ -170,7 +170,8 @@ class Program {
       } else {
         Console.WriteLine("A számok nem azonosak");
       }
-    }    
+    }
+    //Kész
   }
   
   //Prím szám kereső metódus
